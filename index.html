@@ -3,155 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjisha | Web Lab</title>
+    <title>Anjisha | Portfolio</title>
     <!-- Tailwind CSS Script -->
     <script src="https://tailwindcss.com"></script>
-    <!-- Sleek and Clean Modern Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
         body {
-            background-color: #f1ebd9; /* Rich Warm Warm-Beige Editorial Background */
-            color: #1a1a1a;
+            background-color: #f8fafc;
+            color: #0f172a;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .heading-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-        .clean-border {
-            border: 3px solid #1a1a1a;
-        }
-        .brutal-shadow {
-            box-shadow: 4px 4px 0px 0px #1a1a1a;
-        }
-        .clean-card {
-            transition: all 0.2s ease-in-out;
-        }
-        .clean-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px 0px #1a1a1a;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
     </style>
 </head>
-<body class="antialiased min-h-screen pb-24">
+<body class="antialiased min-h-screen">
 
-    <!-- Top Navigation Bar (Stark White Block) -->
-    <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center bg-white clean-border brutal-shadow mt-4 rounded-xl">
-        <div class="heading-font font-bold tracking-tight text-lg uppercase bg-slate-900 text-white px-3 py-1">ANJISHA.DEV ✷</div>
-        <div class="flex gap-6 text-sm font-bold uppercase heading-font tracking-wider">
-            <a href="#work" class="hover:underline underline-offset-4">My Work</a>
-            <a href="#skills" class="hover:underline underline-offset-4">Core Skills</a>
-            <a href="#contact" class="hover:underline underline-offset-4">Contact Info</a>
+    <!-- NAVIGATION HEADER -->
+    <nav class="max-w-7xl mx-auto px-12 py-8 flex justify-between items-center border-b-2 border-slate-900 bg-white shadow-sm">
+        <div class="heading-font font-bold text-2xl uppercase tracking-tight bg-slate-900 text-white px-4 py-1">ANJISHA.DEV</div>
+        <div class="flex gap-12 text-base font-bold uppercase heading-font tracking-widest">
+            <a href="#work" class="hover:text-blue-600 transition">Work</a>
+            <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
+            <a href="#contact" class="hover:text-red-600 transition">Contact</a>
         </div>
     </nav>
 
-    <!-- Header / Biography Workspace (Soft Antique Wheat Background) -->
-    <main class="max-w-5xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+    <!-- BIOGRAPHY WORKSPACE (Massive Top Spacing Gap) -->
+    <main class="max-w-7xl mx-auto px-12 mt-32 mb-32 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
         
-        <!-- Left Side: Text Details -->
-        <div class="md:col-span-7 space-y-6">
-            <div class="inline-block bg-[#fcd34d] clean-border text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wide brutal-shadow">
-                ✷ Frontend Developer & Designer
+        
+        <div class="md:col-span-7 space-y-8">
+            <div class="inline-block bg-blue-600 border-2 border-slate-900 text-white text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-widest shadow-sm">
+                ⚡ Frontend Developer & Designer
             </div>
             
-            <div class="clean-border bg-white p-6 brutal-shadow">
-                <h1 class="heading-font text-4xl md:text-5xl font-bold uppercase tracking-tight leading-tight">
+            <div class="border-2 border-slate-900 bg-white p-8 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] rounded-xl">
+                <h1 class="heading-font text-5xl font-black uppercase tracking-tight text-slate-900">
                     ANJISHA
                 </h1>
-                <p class="text-xs font-bold text-slate-500 mt-1">// Personal Portfolio Space</p>
             </div>
 
-            <p class="text-base leading-relaxed text-slate-800 font-medium">
+            <p class="text-lg leading-relaxed text-slate-700 max-w-xl font-medium">
                 Welcome to my web studio! I am passionate about programming, designing digital assets, and constructing functional modern web interfaces. I break down layout systems and design clean, interactive web experiences.
             </p>
         </div>
 
-        <!-- Right Side: Main Polaroid Floral Art Asset (Clean White Anchor) -->
-        <div class="md:col-span-5 flex justify-center">
-            <div class="clean-border bg-white p-4 pb-8 w-full max-w-[280px] brutal-shadow transform rotate-1">
-                <div class="w-full h-64 bg-slate-100 clean-border overflow-hidden">
+        <!-- Right Side: Polaroid Flower Image Anchor -->
+        <div class="md:col-span-5 flex justify-end">
+            <div class="border-2 border-slate-900 bg-white p-6 pb-12 w-full max-w-[340px] shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl transform rotate-2">
+                <div class="w-full h-80 bg-slate-100 border-2 border-slate-900 overflow-hidden rounded-xl">
                     <img src="https://unsplash.com" 
-                         alt="Minimal White Flower Botanical Asset" 
-                         class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply">
-                </div>
-                <div class="mt-4 text-center">
-                    <p class="heading-font font-bold uppercase tracking-wider text-xs">Botanical Studio Fig. 01</p>
+                         alt="Botanical Art Visual" 
+                         class="w-full h-full object-cover grayscale contrast-125">
                 </div>
             </div>
         </div>
 
     </main>
 
-    <!-- Work Launchpad Deck (Vibrant Color-Blocked Project Grid) -->
-    <section id="work" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
-        <h2 class="heading-font font-bold text-2xl uppercase tracking-tight bg-white px-4 py-1.5 clean-border brutal-shadow mb-8 inline-block">
+    <!-- WORK SECTION (Massive Spacing Layout Blocks) -->
+    <section id="work" class="max-w-7xl mx-auto px-12 mt-48 mb-48 scroll-mt-12">
+        <h2 class="heading-font font-bold text-3xl uppercase bg-blue-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
             Featured Projects 📂
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Project 1: Portfolio Hub (Soft Muted Rose Pink) -->
-            <a href="https://github.com" target="_blank" class="block clean-card clean-border bg-[#ffe4e6] p-4 brutal-shadow text-left group">
-                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
-                    <img src="https://unsplash.com" alt="Pink Flower Branch" class="w-full h-full object-cover grayscale mix-blend-multiply">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- Project 1: Portfolio Hub (Soft Muted Rose Pink Block) -->
+            <a href="https://github.com" target="_blank" class="block border-2 border-slate-900 bg-[#ffe4e6] p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] transition-all rounded-2xl group">
+                <div class="w-full h-56 bg-white border-2 border-slate-900 mb-6 overflow-hidden rounded-xl">
+                    <img src="https://unsplash.com" alt="Floral Asset 2" class="w-full h-full object-cover grayscale mix-blend-multiply">
                 </div>
-                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Repository Base</span>
-                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-rose-600 transition-colors">Portfolio Hub ↗</h3>
-                <p class="text-xs mt-2 text-slate-700 leading-relaxed">This clean customized developer layout built with Tailwind CSS utility classes and continuous git updates.</p>
+                <h3 class="heading-font font-bold text-2xl text-slate-900 group-hover:underline">Portfolio Hub ↗</h3>
+                <p class="text-sm mt-4 text-slate-700 leading-relaxed font-medium">This clean customized developer layout built with Tailwind CSS utility classes and hosted live right here.</p>
             </a>
 
-            <!-- Project 2: Custom Gaming Site (Vibrant Lavender Purple) -->
-            <a href="https://bit.ly" target="_blank" class="block clean-card clean-border bg-[#e0e7ff] p-4 brutal-shadow text-left group">
-                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
-                    <img src="https://unsplash.com" alt="Elegant Field Plant" class="w-full h-full object-cover grayscale mix-blend-multiply">
+            <!-- Project 2: Misconception Clinic Web App (Fresh Mint Green Block) -->
+            <a href="https://vercel.app" target="_blank" class="block border-2 border-slate-900 bg-[#d1fae5] p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] transition-all rounded-2xl group">
+                <div class="w-full h-56 bg-white border-2 border-slate-900 mb-6 overflow-hidden rounded-xl">
+                    <img src="https://unsplash.com" alt="Floral Asset 3" class="w-full h-full object-cover grayscale mix-blend-multiply">
                 </div>
-                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Web Application</span>
-                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-indigo-600 transition-colors">Custom Gaming Site ↗</h3>
-                <p class="text-xs mt-2 text-slate-700 leading-relaxed">My live interactive gaming layout built to master active user element delivery and custom layouts.</p>
-            </a>
-
-            <!-- Project 3: Misconception Clinic (Fresh Pastel Mint Green) -->
-            <a href="https://vercel.app" target="_blank" class="block clean-card clean-border bg-[#d1fae5] p-4 brutal-shadow text-left group">
-                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
-                    <img src="https://unsplash.com" alt="Dried Botanical Stem" class="w-full h-full object-cover grayscale mix-blend-multiply">
-                </div>
-                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Deployed App</span>
-                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-emerald-700 transition-colors">Misconception Clinic ↗</h3>
-                <p class="text-xs mt-2 text-slate-700 leading-relaxed">A custom web application deployed onto Vercel tracking system rule states and logic behaviors.</p>
+                <h3 class="heading-font font-bold text-2xl text-slate-900 group-hover:underline">Misconception Clinic ↗</h3>
+                <p class="text-sm mt-4 text-slate-700 leading-relaxed font-medium">A custom web application deployed onto Vercel tracking application rule states, filters, and logical content structures.</p>
             </a>
         </div>
     </section>
 
-    <!-- Core Skills Block Gallery (Teal & Yellow Split Modules) -->
-    <section id="skills" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
-        <h2 class="heading-font font-bold text-2xl uppercase tracking-tight bg-white px-4 py-1.5 clean-border brutal-shadow mb-8 inline-block">
-            Core Skill Systems ⚙️
+    <!-- CORE SKILLS BLOCK GALLERY (Gigantic Spacing Separation) -->
+    <section id="skills" class="max-w-7xl mx-auto px-12 mt-48 mb-48 scroll-mt-12">
+        <h2 class="heading-font font-bold text-3xl uppercase bg-pink-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
+            Core Skills ⚙️
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Skill Module 1 (Electric Teal Card) -->
-            <div class="bg-[#ccfbf1] clean-border p-6 brutal-shadow flex gap-4 items-start">
-                <div class="text-2xl bg-white border-2 border-slate-900 rounded-full p-1.5">平</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- Skill Module 1: UI/UX (Stark White Block - Left Highlighted) -->
+            <div class="bg-white border-2 border-slate-900 p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl flex gap-6 items-start">
+                <div class="text-3xl bg-blue-100 border-2 border-slate-900 rounded-full p-3 font-bold text-blue-600">🖋</div>
                 <div>
-                    <h3 class="heading-font font-bold text-base uppercase tracking-wide">UI / UX Designing</h3>
-                    <ul class="text-xs text-slate-800 font-medium mt-2 space-y-1 list-disc list-inside leading-relaxed">
-                        <li>Structuring clean application flows & dark theme frameworks</li>
+                    <h3 class="heading-font font-bold text-xl uppercase tracking-wide text-slate-900">UI / UX Designing</h3>
+                    <ul class="text-sm text-slate-600 font-medium mt-4 space-y-2 list-disc list-inside leading-relaxed">
+                        <li>Structuring clean application flows & custom interface frameworks</li>
                         <li>Arranging beautiful typography systems and element spacing</li>
                         <li>Designing custom functional assets for interactive layouts</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Skill Module 2 (Bright Soft Yellow Card) -->
-            <div class="bg-[#fef08a] clean-border p-6 brutal-shadow flex gap-4 items-start">
-                <div class="text-2xl bg-white border-2 border-slate-900 rounded-full p-1.5">💻</div>
+            <!-- Skill Module 2: Development (Stark White Block - Right Highlighted) -->
+            <div class="bg-white border-2 border-slate-900 p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl flex gap-6 items-start">
+                <div class="text-3xl bg-pink-100 border-2 border-slate-900 rounded-full p-3 font-bold text-pink-600">💻</div>
                 <div>
-                    <h3 class="heading-font font-bold text-base uppercase tracking-wide">Website Development</h3>
-                    <ul class="text-xs text-slate-800 font-medium mt-2 space-y-1 list-disc list-inside leading-relaxed">
+                    <h3 class="heading-font font-bold text-xl uppercase tracking-wide text-slate-900">Website Development</h3>
+                    <ul class="text-sm text-slate-600 font-medium mt-4 space-y-2 list-disc list-inside leading-relaxed">
                         <li>Building responsive layouts that shift cleanly on screens</li>
                         <li>Writing standard lightweight component files and frameworks</li>
                         <li>Continuous integration pipelines and git push deployments</li>
@@ -161,5 +128,21 @@
         </div>
     </section>
 
-    <!-- Clickable Contact Information Card (Sunset Orange Alert Card) -->
-    <section id="contact" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
+    <!-- CONTACT INFORMATION MODULE (Sunset Red Card) -->
+    <section id="contact" class="max-w-7xl mx-auto px-12 mt-48 mb-32 scroll-mt-12">
+        <h2 class="heading-font font-bold text-3xl uppercase bg-red-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
+            Contact Info 📬
+        </h2>
+        
+        <div class="border-2 border-slate-900 bg-[#fee2e2] p-12 text-center max-w-2xl mx-auto shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] rounded-3xl">
+            <span class="text-4xl block mb-4">✉</span>
+            <h3 class="heading-font font-bold text-2xl uppercase tracking-wide text-slate-900 mb-4">Start a Collaboration</h3>
+            
+            <a href="mailto:thunderpromax169@gmail.com" class="inline-block border-2 border-slate-900 bg-slate-900 text-white font-bold text-base uppercase tracking-widest px-10 py-5 hover:bg-white hover:text-slate-900 transition-colors shadow-[4px_4px_0px_0px_rgba(239,68,68,1)] rounded-xl">
+                📧 thunderpromax169@gmail.com
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
