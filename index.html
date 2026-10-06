@@ -6,30 +6,32 @@
     <title>Anjisha | Web Lab</title>
     <!-- Tailwind CSS Script -->
     <script src="https://tailwindcss.com"></script>
-    <!-- Google Fonts for the Raw Zine Typewriter Vibe -->
+    <!-- Sleek and Clean Modern Fonts -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
         body {
-            background-color: #e5e0d8; /* Editorial Warm Warm-Beige */
-            color: #1c1b19; /* Stark Carbon Black */
-            font-family: 'Courier Prime', monospace;
+            background-color: #f1ebd9; /* Rich Warm Warm-Beige Editorial Background */
+            color: #1a1a1a;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .heading-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-        /* Brutalist Hard Border Outlines */
-        .brutal-border {
-            border: 2px solid #1c1b19;
+        .clean-border {
+            border: 3px solid #1a1a1a;
         }
         .brutal-shadow {
-            box-shadow: 4px 4px 0px 0px #1c1b19;
+            box-shadow: 4px 4px 0px 0px #1a1a1a;
         }
-        .brutal-card:hover {
+        .clean-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .clean-card:hover {
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px 0px #1c1b19;
+            box-shadow: 6px 6px 0px 0px #1a1a1a;
         }
         html {
             scroll-behavior: smooth;
@@ -38,131 +40,126 @@
 </head>
 <body class="antialiased min-h-screen pb-24">
 
-    <!-- Header Border Bar -->
-    <nav class="max-w-4xl mx-auto px-6 py-6 flex justify-between items-center border-b-2 border-dashed border-[#1c1b19] mt-4">
-        <div class="heading-font font-black tracking-tighter text-xl uppercase bg-[#1c1b19] text-[#e5e0d8] px-2 py-0.5">ANJISHA.DEV ✷</div>
-        <div class="flex gap-6 text-sm font-bold uppercase heading-font">
-            <a href="#work" class="hover:underline underline-offset-4">MY WORK</a>
-            <a href="#skills" class="hover:underline underline-offset-4">SERVICES</a>
-            <a href="#contact" class="hover:underline underline-offset-4">CONNECT</a>
+    <!-- Top Navigation Bar (Stark White Block) -->
+    <nav class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center bg-white clean-border brutal-shadow mt-4 rounded-xl">
+        <div class="heading-font font-bold tracking-tight text-lg uppercase bg-slate-900 text-white px-3 py-1">ANJISHA.DEV ✷</div>
+        <div class="flex gap-6 text-sm font-bold uppercase heading-font tracking-wider">
+            <a href="#work" class="hover:underline underline-offset-4">My Work</a>
+            <a href="#skills" class="hover:underline underline-offset-4">Core Skills</a>
+            <a href="#contact" class="hover:underline underline-offset-4">Contact Info</a>
         </div>
     </nav>
 
-    <!-- Main Zine Content Workspace -->
-    <main class="max-w-4xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+    <!-- Header / Biography Workspace (Soft Antique Wheat Background) -->
+    <main class="max-w-5xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         
-        
-        <div class="md:col-span-7 space-y-8">
-            <div class="inline-block brutal-border bg-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider brutal-shadow">
-                ✷ FREELANCE WEB SPECIALIST
+        <!-- Left Side: Text Details -->
+        <div class="md:col-span-7 space-y-6">
+            <div class="inline-block bg-[#fcd34d] clean-border text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wide brutal-shadow">
+                ✷ Frontend Developer & Designer
             </div>
             
-            <!-- Handcrafted Name Accent Stamp Box -->
-            <div class="brutal-border bg-white p-6 brutal-shadow relative overflow-hidden rotate-[-1deg]">
-                <div class="absolute top-2 right-4 text-xl opacity-40">☺</div>
-                <h1 class="heading-font text-5xl font-black uppercase tracking-tighter leading-none">
-                    ZUKISWA<br><span class="text-neutral-400">PHIRI</span>
+            <div class="clean-border bg-white p-6 brutal-shadow">
+                <h1 class="heading-font text-4xl md:text-5xl font-bold uppercase tracking-tight leading-tight">
+                    ANJISHA
                 </h1>
-                <p class="text-xs uppercase tracking-widest font-bold text-neutral-500 mt-2">// anjishaprog studio</p>
+                <p class="text-xs font-bold text-slate-500 mt-1">// Personal Portfolio Space</p>
             </div>
 
-            <div class="text-sm leading-relaxed space-y-4 pt-4">
-                <p class="font-bold">Anjisha Phiri is a freelance frontend developer and digital asset architect specializing in responsive structure execution and UI optimization frameworks.</p>
-                <p class="text-neutral-700">I break down complex layouts, assemble functional design ecosystems, and code beautiful web architectures using lightweight component styling parameters.</p>
-            </div>
+            <p class="text-base leading-relaxed text-slate-800 font-medium">
+                Welcome to my web studio! I am passionate about programming, designing digital assets, and constructing functional modern web interfaces. I break down layout systems and design clean, interactive web experiences.
+            </p>
         </div>
 
-        <!-- Right Side: Polaroid Botanical Art Box (Plant Visual Anchor) -->
+        <!-- Right Side: Main Polaroid Floral Art Asset (Clean White Anchor) -->
         <div class="md:col-span-5 flex justify-center">
-            <div class="brutal-border bg-white p-4 pb-8 brutal-shadow rotate-[2deg] w-full max-w-[280px] transition-transform hover:rotate-0 duration-300">
-                <div class="w-full h-64 bg-[#f3efe9] brutal-border overflow-hidden flex items-center justify-center relative">
-                    <!-- Elegant Minimalist Placeholder Flower Asset Link -->
+            <div class="clean-border bg-white p-4 pb-8 w-full max-w-[280px] brutal-shadow transform rotate-1">
+                <div class="w-full h-64 bg-slate-100 clean-border overflow-hidden">
                     <img src="https://unsplash.com" 
-                         alt="Minimalist White Flower Botanical Asset" 
+                         alt="Minimal White Flower Botanical Asset" 
                          class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply">
-                    <div class="absolute bottom-2 left-2 text-[10px] bg-white brutal-border px-1.5 uppercase font-bold tracking-widest">FIG. 01</div>
                 </div>
                 <div class="mt-4 text-center">
-                    <p class="heading-font font-bold uppercase tracking-wider text-xs">BOTANICAL STUDY</p>
-                    <p class="text-[10px] text-neutral-500 mt-1">Anjisha Portfolio Space // 2026</p>
+                    <p class="heading-font font-bold uppercase tracking-wider text-xs">Botanical Studio Fig. 01</p>
                 </div>
             </div>
         </div>
 
     </main>
 
-    <!-- Work Launchpad Deck (Clickable Project Columns) -->
-    <section id="work" class="max-w-4xl mx-auto px-6 mt-20">
-        <!-- Zine Header Separator Label -->
-        <div class="brutal-border bg-white brutal-shadow px-4 py-2 inline-block font-black uppercase text-sm tracking-wide heading-font mb-6 rotate-[-0.5deg]">
-            MY WORK ☺
-        </div>
+    <!-- Work Launchpad Deck (Vibrant Color-Blocked Project Grid) -->
+    <section id="work" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
+        <h2 class="heading-font font-bold text-2xl uppercase tracking-tight bg-white px-4 py-1.5 clean-border brutal-shadow mb-8 inline-block">
+            Featured Projects 📂
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Card 1: Main Base Repo -->
-            <a href="https://github.com" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
-                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// DEPLOYED BASE</span>
-                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">PORTFOLIO HUB ↗</h3>
-                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Clean customized layout engineered with modern utility structure parameters and continuous git updates.</p>
+            <!-- Project 1: Portfolio Hub (Soft Muted Rose Pink) -->
+            <a href="https://github.com" target="_blank" class="block clean-card clean-border bg-[#ffe4e6] p-4 brutal-shadow text-left group">
+                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
+                    <img src="https://unsplash.com" alt="Pink Flower Branch" class="w-full h-full object-cover grayscale mix-blend-multiply">
+                </div>
+                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Repository Base</span>
+                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-rose-600 transition-colors">Portfolio Hub ↗</h3>
+                <p class="text-xs mt-2 text-slate-700 leading-relaxed">This clean customized developer layout built with Tailwind CSS utility classes and continuous git updates.</p>
             </a>
 
-            <!-- Card 2: Interactive Gaming Application -->
-            <a href="https://bit.ly" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
-                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// RECREATION LAB</span>
-                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">GAMING PLAYGROUND ↗</h3>
-                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Interactive live media layout developed to refine responsive asset distribution workflows and logic flow cards.</p>
+            <!-- Project 2: Custom Gaming Site (Vibrant Lavender Purple) -->
+            <a href="https://bit.ly" target="_blank" class="block clean-card clean-border bg-[#e0e7ff] p-4 brutal-shadow text-left group">
+                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
+                    <img src="https://unsplash.com" alt="Elegant Field Plant" class="w-full h-full object-cover grayscale mix-blend-multiply">
+                </div>
+                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Web Application</span>
+                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-indigo-600 transition-colors">Custom Gaming Site ↗</h3>
+                <p class="text-xs mt-2 text-slate-700 leading-relaxed">My live interactive gaming layout built to master active user element delivery and custom layouts.</p>
             </a>
 
-            <!-- Card 3: Clinic Application Deck -->
-            <a href="https://vercel.app" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
-                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// VERCEL BUILD</span>
-                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">MISCONCEPTION APP ↗</h3>
-                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Custom web engine deployed to monitor interfaces, content filters, and modern cross-platform browser spacing.</p>
+            <!-- Project 3: Misconception Clinic (Fresh Pastel Mint Green) -->
+            <a href="https://vercel.app" target="_blank" class="block clean-card clean-border bg-[#d1fae5] p-4 brutal-shadow text-left group">
+                <div class="w-full h-40 bg-white clean-border mb-4 overflow-hidden">
+                    <img src="https://unsplash.com" alt="Dried Botanical Stem" class="w-full h-full object-cover grayscale mix-blend-multiply">
+                </div>
+                <span class="text-[10px] font-bold uppercase text-slate-700 tracking-wider">// Deployed App</span>
+                <h3 class="heading-font font-bold text-lg mt-0.5 group-hover:text-emerald-700 transition-colors">Misconception Clinic ↗</h3>
+                <p class="text-xs mt-2 text-slate-700 leading-relaxed">A custom web application deployed onto Vercel tracking system rule states and logic behaviors.</p>
             </a>
         </div>
     </section>
 
-    <!-- Services / Core Competencies Matrix Section -->
-    <section id="skills" class="max-w-4xl mx-auto px-6 mt-20">
-        <div class="w-full text-center mb-8">
-            <h2 class="brutal-border bg-white brutal-shadow px-8 py-3 inline-block font-black uppercase text-lg tracking-wider heading-font">
-                SERVICES I OFFER
-            </h2>
-        </div>
+    <!-- Core Skills Block Gallery (Teal & Yellow Split Modules) -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
+        <h2 class="heading-font font-bold text-2xl uppercase tracking-tight bg-white px-4 py-1.5 clean-border brutal-shadow mb-8 inline-block">
+            Core Skill Systems ⚙️
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Box Module 1 -->
-            <div class="bg-white brutal-border p-6 brutal-shadow flex gap-4 items-start">
-                <div class="text-2xl pt-1">🖋</div>
+            <!-- Skill Module 1 (Electric Teal Card) -->
+            <div class="bg-[#ccfbf1] clean-border p-6 brutal-shadow flex gap-4 items-start">
+                <div class="text-2xl bg-white border-2 border-slate-900 rounded-full p-1.5">平</div>
                 <div>
-                    <h3 class="heading-font font-bold text-base uppercase tracking-tight">UI / UX Designing</h3>
-                    <p class="text-xs text-neutral-600 mt-2 leading-relaxed">Assembling high-fidelity mockups, clean component layouts, custom font grids, and interactive web flow parameters constructed from visual assets.</p>
+                    <h3 class="heading-font font-bold text-base uppercase tracking-wide">UI / UX Designing</h3>
+                    <ul class="text-xs text-slate-800 font-medium mt-2 space-y-1 list-disc list-inside leading-relaxed">
+                        <li>Structuring clean application flows & dark theme frameworks</li>
+                        <li>Arranging beautiful typography systems and element spacing</li>
+                        <li>Designing custom functional assets for interactive layouts</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Box Module 2 -->
-            <div class="bg-white brutal-border p-6 brutal-shadow flex gap-4 items-start">
-                <div class="text-2xl pt-1">💻</div>
+            <!-- Skill Module 2 (Bright Soft Yellow Card) -->
+            <div class="bg-[#fef08a] clean-border p-6 brutal-shadow flex gap-4 items-start">
+                <div class="text-2xl bg-white border-2 border-slate-900 rounded-full p-1.5">💻</div>
                 <div>
-                    <h3 class="heading-font font-bold text-base uppercase tracking-tight">Website Development</h3>
-                    <p class="text-xs text-neutral-600 mt-2 leading-relaxed">Building fast, lightweight components, semantic HTML blueprints, utility CSS declarations, and secure automated cloud tracking pipelines.</p>
+                    <h3 class="heading-font font-bold text-base uppercase tracking-wide">Website Development</h3>
+                    <ul class="text-xs text-slate-800 font-medium mt-2 space-y-1 list-disc list-inside leading-relaxed">
+                        <li>Building responsive layouts that shift cleanly on screens</li>
+                        <li>Writing standard lightweight component files and frameworks</li>
+                        <li>Continuous integration pipelines and git push deployments</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Connect Action Console Footer -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 mt-20 border-t-2 border-dashed border-[#1c1b19] pt-12">
-        <div class="brutal-border bg-white brutal-shadow p-8 text-center max-w-xl mx-auto rotate-[-0.5deg]">
-            <span class="text-2xl block mb-2">✉</span>
-            <h3 class="heading-font font-black text-xl uppercase tracking-tighter mb-2">START A WORK COLLABORATION</h3>
-            <p class="text-xs text-neutral-600 mb-6 font-mono">Let's craft unique interactive digital systems together.</p>
-            
-            <a href="mailto:thunderpromax169@gmail.com" class="inline-block brutal-border bg-[#1c1b19] text-[#e5e0d8] font-bold text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#1c1b19] transition-colors brutal-shadow">
-                HELLO@REALLYGREATSITE.COM
-            </a>
-        </div>
-    </section>
-
-</body>
-</html>
+    <!-- Clickable Contact Information Card (Sunset Orange Alert Card) -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 mt-24 scroll-mt-6">
