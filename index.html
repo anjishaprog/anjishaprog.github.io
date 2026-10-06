@@ -45,55 +45,76 @@
         <h2 class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-6">Featured Projects</h2>
         
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <!-- Project 1 -->
+            <!-- Project 1 (Your Portfolio Code) -->
             <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
                 <span class="text-xs font-medium text-sky-400">Frontend Development</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100">Personal Website</h3>
-                <p class="text-sm mt-2 text-slate-400">My customized developer portfolio template built with Tailwind CSS and hosted on GitHub Pages.</p>
+                <h3 class="font-semibold text-lg mt-1 text-slate-100">Personal Portfolio</h3>
+                <p class="text-sm mt-2 text-slate-400">This clean customized developer layout built with Tailwind CSS and hosted on GitHub Pages.</p>
             </div>
 
-            <!-- Project 2 (Clickable Gaming Project) -->
-            <a href="https://bit.ly" target="_blank" class="block p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition group">
+            <!-- Project 2 (Clickable Gaming Site Link) -->
+            <a href="https://bit.ly" target="_blank" class="block p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition group text-left">
                 <span class="text-xs font-medium text-sky-400">Web Application</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100 group-hover:text-sky-400 transition">Custom Gaming Website</h3>
-                <p class="text-sm mt-2 text-slate-400">A custom-built live web platform showcasing dynamic layouts, gaming media assets, and structured logic.</p>
+                <h3 class="font-semibold text-lg mt-1 text-slate-100 group-hover:text-sky-400 transition flex justify-between items-center">
+                    <span>Custom Gaming Site</span>
+                    <span class="text-xs text-sky-400/70 group-hover:translate-x-1 transition-transform">→</span>
+                </h3>
+                <p class="text-sm mt-2 text-slate-400 group-hover:text-slate-300 transition">My live interactive gaming layout. Click this card to check it out instantly!</p>
             </a>
 
-            <!-- Project 3 -->
+            <!-- Project 3 (Interactive App Template) -->
             <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
-                <span class="text-xs font-medium text-sky-400">Web Design</span>
+                <span class="text-xs font-medium text-sky-400">Web Application</span>
                 <h3 class="font-semibold text-lg mt-1 text-slate-100">Interactive Web App</h3>
-                <p class="text-sm mt-2 text-slate-400">A frontend JavaScript project emphasizing clean modern interface design and dynamic user components.</p>
+                <p class="text-sm mt-2 text-slate-400">A JavaScript project showcasing structured logic flow, dynamic user components, and neat assets.</p>
             </div>
         </div>
     </main>
 
-    <!-- Skills Section -->
-    <section id="skills" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/60">
+    <!-- Skills Section (Restored to Beautiful Grid Cards) -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800">
         <h2 class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-6">Core Skills</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div class="p-6 rounded-xl bg-slate-800/20 border border-slate-800">
-                <h3 class="font-bold text-lg text-sky-400 mb-2">UI/UX Designing</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">Designing clean, high-performance mockups and wireframes with an emphasis on modern spacing, typography systems, user flows, and aesthetic visual assets.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Skill Card 1 -->
+            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
+                <span class="text-xs font-medium text-sky-400">Creative Direction</span>
+                <h3 class="font-semibold text-lg mt-1 text-slate-100">UI / UX Designing</h3>
+                <ul class="text-sm mt-3 text-slate-400 space-y-2 list-disc list-inside">
+                    <li>Clean interface layouts & modern wireframes</li>
+                    <li>Sleek spacing, grid alignment, and typography</li>
+                    <li>Designing customized gaming & digital digital assets</li>
+                </ul>
             </div>
-            <div class="p-6 rounded-xl bg-slate-800/20 border border-slate-800">
-                <h3 class="font-bold text-lg text-sky-400 mb-2">Website Development</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">Constructing fully responsive frontend web experiences using HTML, utility-first CSS frameworks like Tailwind CSS, and structured JavaScript logic.</p>
+
+            <!-- Skill Card 2 -->
+            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
+                <span class="text-xs font-medium text-sky-400">Technical Execution</span>
+                <h3 class="font-semibold text-lg mt-1 text-slate-100">Website Development</h3>
+                <ul class="text-sm mt-3 text-slate-400 space-y-2 list-disc list-inside">
+                    <li>Building fast, fully responsive web layouts</li>
+                    <li>Writing clean semantic HTML structure</li>
+                    <li>Styling interfaces with utility frameworks like Tailwind</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Contact Section -->
+    <!-- Footer / Clickable Contact Section -->
     <footer id="contact" class="max-w-6xl mx-auto px-6 py-12 mt-12 border-t border-slate-800 text-center text-sm text-slate-500">
-        <div class="mb-6">
-            <p class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-2">Get In Touch</p>
-            <p class="text-base text-slate-300">Let's collaborate! Reach me at: <a href="mailto:thunderpromax169@gmail.com" class="text-sky-400 hover:underline">thunderpromax169@gmail.com</a></p>
+        <div class="mb-8 max-w-md mx-auto">
+            <p class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-3">Get In Touch</p>
+            <!-- A big, beautiful interactive button for your email -->
+            <a href="mailto:thunderpromax169@gmail.com" class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:border-sky-400 text-slate-200 hover:text-sky-400 font-medium transition shadow-sm">
+                📧 Email Me: thunderpromax169@gmail.com
+            </a>
         </div>
-        <div class="pt-6 border-t border-slate-800/40">
+        
+        <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
             <p>© 2026 Anjisha. Powered by GitHub Pages.</p>
-            <p class="mt-2">
+            <p>
                 View my source code on 
-                <a href="https://github.com" target="_blank" class="text-sky-400 hover:text-sky-300 transition underline underline-offset-4">GitHub</a>
+                <a href="https://github.com" target="_blank" class="text-sky-400 hover:text-sky-300 transition underline underline-offset-4 font-medium">GitHub</a>
             </p>
         </div>
     </footer>
