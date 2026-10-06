@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjisha | Portfolio</title>
+    <title>Anjisha | Web Lab</title>
     <!-- Tailwind CSS Script -->
     <script src="https://tailwindcss.com"></script>
     <style>
@@ -11,113 +11,145 @@
             background-color: #0f172a; /* Slate 900 */
             color: #f8fafc; /* Slate 50 */
         }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body class="antialiased min-h-screen">
+<body class="antialiased min-h-screen flex flex-col md:flex-row">
 
-    <!-- Navigation Header -->
-    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center border-b border-slate-800">
-        <div class="font-bold tracking-tight text-xl text-sky-400">anjisha.dev</div>
-        <div class="flex gap-6 text-sm font-medium text-slate-400">
-            <a href="#work" class="hover:text-slate-100 transition">Work</a>
-            <a href="#skills" class="hover:text-slate-100 transition">Skills</a>
-            <a href="#contact" class="hover:text-slate-100 transition">Contact</a>
+    <!-- Sidebar Navigation Menu (Interactive App Controller) -->
+    <nav class="w-full md:w-64 bg-slate-900/80 border-b md:border-b-0 md:border-r border-slate-800 p-6 flex flex-col justify-between shrink-0 md:sticky md:top-0 md:h-screen">
+        <div>
+            <div class="font-black tracking-wider text-2xl text-sky-400 mb-8 flex items-center gap-2">
+                <span>⚡</span> anjisha.dev
+            </div>
+            
+            <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Navigation Hub</p>
+            <div class="flex flex-row md:flex-col gap-2 text-sm font-medium text-slate-400 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
+                <a href="#welcome" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
+                    <span>👋</span> Welcome
+                </a>
+                <a href="#work" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
+                    <span>🕹️</span> Featured Work
+                </a>
+                <a href="#skills" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
+                    <span>🛠️</span> Core Skills
+                </a>
+                <a href="#contact" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
+                    <span>📬</span> Contact Info
+                </a>
+            </div>
+        </div>
+
+        <!-- Stable Footer Branding Inside Sidebar -->
+        <div class="hidden md:block pt-6 border-t border-slate-800/60 text-xs text-slate-500 space-y-2">
+            <p>© 2026 Anjisha.<br>Hosted on GitHub Pages.</p>
+            <a href="https://github.com" target="_blank" class="inline-block text-sky-400 hover:underline">View Profile Source ↗</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="max-w-6xl mx-auto px-6 py-20 text-left grid sm:grid-cols-1 gap-8 items-center">
-        <div>
-            <span class="text-xs px-2 py-1 rounded-full font-medium text-sky-400 bg-sky-500/10 border border-sky-500/20">
-                Open to Opportunities
+    <!-- Main Dynamic Content Workspace -->
+    <div class="flex-1 max-w-5xl px-6 md:px-12 py-8 space-y-16">
+
+        <!-- 1. Intro Screen -->
+        <header id="welcome" class="py-12 border-b border-slate-800/50">
+            <span class="inline-flex items-center text-xs px-2.5 py-1 rounded-full font-medium text-sky-400 bg-sky-500/10 border border-sky-500/20">
+                🚀 Welcome to My Web Lab
             </span>
-            <h1 class="text-5xl font-bold tracking-tight mt-4 max-w-2xl bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-                Hi, I'm Anjisha. I build clean & responsive web experiences.
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent leading-tight">
+                Hi, I'm Anjisha. I construct clean & interactive web interfaces.
             </h1>
-            <p class="mt-4 text-base text-slate-400 max-w-xl leading-relaxed">
-                Welcome to my personal site! I am passionate about programming, designing digital assets, and constructing functional modern web interfaces.
+            <p class="mt-4 text-slate-400 max-w-xl text-base leading-relaxed">
+                I love breaking down layout systems, organizing unique frontend assets, and coding highly responsive applications from scratch.
             </p>
-        </div>
-    </header>
+        </header>
 
-    <!-- Work Section -->
-    <main id="work" class="max-w-6xl mx-auto px-6 py-12">
-        <h2 class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-6">Featured Projects</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <!-- Project 1 (Your Portfolio Code) -->
-            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
-                <span class="text-xs font-medium text-sky-400">Frontend Development</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100">Personal Portfolio</h3>
-                <p class="text-sm mt-2 text-slate-400">This clean customized developer layout built with Tailwind CSS and hosted on GitHub Pages.</p>
+        <!-- 2. Work Showcase Panel -->
+        <section id="work" class="scroll-mt-6">
+            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
+                <span>📂</span> Clickable App Launchpad
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <!-- App Card 1 -->
+                <a href="https://github.com/anjishaprog.github.io" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
+                    <span class="text-xs font-semibold text-sky-400">Template Base</span>
+                    <h3 class="font-bold text-lg mt-1 text-slate-100 flex justify-between items-center">
+                        <span>Portfolio Hub</span>
+                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
+                    </h3>
+                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">This clean layout built using Tailwind CSS utility styles.</p>
+                </a>
+
+                <!-- App Card 2 (Gaming Link) -->
+                <a href="https://bit.ly" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
+                    <span class="text-xs font-semibold text-purple-400">Immersive Play</span>
+                    <h3 class="font-bold text-lg mt-1 text-slate-100 flex justify-between items-center">
+                        <span>Custom Gaming Site</span>
+                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
+                    </h3>
+                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">My responsive playground mapping modern active layout assets.</p>
+                </a>
+
+                <!-- App Card 3 (Misconception Clinic App) -->
+                <a href="https://vercel.app" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
+                    <span class="text-xs font-semibold text-emerald-400">Deployed App</span>
+                    <h3 class="font-semibold text-lg mt-1 text-slate-100 flex justify-between items-center">
+                        <span>Misconception Clinic</span>
+                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
+                    </h3>
+                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">A custom web interface launched securely onto cloud hosting systems.</p>
+                </a>
             </div>
+        </section>
 
-            <!-- Project 2 (Clickable Gaming Site Link) -->
-            <a href="https://bit.ly" target="_blank" class="block p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition group text-left">
-                <span class="text-xs font-medium text-sky-400">Web Application</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100 group-hover:text-sky-400 transition flex justify-between items-center">
-                    <span>Custom Gaming Site</span>
-                    <span class="text-xs text-sky-400/70 group-hover:translate-x-1 transition-transform">→</span>
-                </h3>
-                <p class="text-sm mt-2 text-slate-400 group-hover:text-slate-300 transition">My live interactive gaming layout. Click this card to check it out instantly!</p>
-            </a>
+        <!-- 3. Skills Matrix Deck -->
+        <section id="skills" class="scroll-mt-6 border-t border-slate-800/50 pt-12">
+            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
+                <span>⚙️</span> Interactive Skill Modules
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-5 rounded-2xl bg-slate-800/20 border border-slate-800 hover:border-slate-700 transition">
+                    <span class="text-xs font-medium text-sky-400 tracking-wider block mb-1">Visual Architecture</span>
+                    <h3 class="font-bold text-lg text-slate-100 mb-2">UI / UX Designing</h3>
+                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                        <li>Structuring minimalist layouts & dark UI flows</li>
+                        <li>Configuring crisp structural grids and spacing</li>
+                        <li>Asset mapping and visual element composition</li>
+                    </ul>
+                </div>
 
-            <!-- Project 3 (Interactive App Template) -->
-            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
-                <span class="text-xs font-medium text-sky-400">Web Application</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100">Interactive Web App</h3>
-                <p class="text-sm mt-2 text-slate-400">A JavaScript project showcasing structured logic flow, dynamic user components, and neat assets.</p>
+                <div class="p-5 rounded-2xl bg-slate-800/20 border border-slate-800 hover:border-slate-700 transition">
+                    <span class="text-xs font-medium text-sky-400 tracking-wider block mb-1">Functional Interface</span>
+                    <h3 class="font-bold text-lg text-slate-100 mb-2">Website Development</h3>
+                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                        <li>Writing clean, lightweight component files</li>
+                        <li>Executing rapid layouts with Tailwind frameworks</li>
+                        <li>Continuous integration and git push deployment</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <!-- Skills Section (Restored to Beautiful Grid Cards) -->
-    <section id="skills" class="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800">
-        <h2 class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-6">Core Skills</h2>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <!-- Skill Card 1 -->
-            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
-                <span class="text-xs font-medium text-sky-400">Creative Direction</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100">UI / UX Designing</h3>
-                <ul class="text-sm mt-3 text-slate-400 space-y-2 list-disc list-inside">
-                    <li>Clean interface layouts & modern wireframes</li>
-                    <li>Sleek spacing, grid alignment, and typography</li>
-                    <li>Designing customized gaming & digital digital assets</li>
-                </ul>
+        <!-- 4. Interactive Contact Console -->
+        <section id="contact" class="scroll-mt-6 border-t border-slate-800/50 pt-12 pb-20">
+            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
+                <span>📬</span> Action Center
+            </h2>
+            
+            <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-800/40 to-slate-900/60 border border-slate-800 text-center max-w-xl">
+                <h3 class="font-bold text-xl text-slate-100 mb-2">Let's Connect!</h3>
+                <p class="text-xs text-slate-400 mb-6 max-w-sm mx-auto">Click below to open your local client dashboard and email me instantly.</p>
+                
+                <a href="mailto:thunderpromax169@gmail.com" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-sky-500 font-semibold text-slate-950 hover:bg-sky-400 transition transform hover:-translate-y-0.5 active:translate-y-0 shadow-lg shadow-sky-500/10 text-sm">
+                    🚀 Launch Email Console
+                </a>
             </div>
+        </section>
 
-            <!-- Skill Card 2 -->
-            <div class="p-6 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-sky-500/40 transition">
-                <span class="text-xs font-medium text-sky-400">Technical Execution</span>
-                <h3 class="font-semibold text-lg mt-1 text-slate-100">Website Development</h3>
-                <ul class="text-sm mt-3 text-slate-400 space-y-2 list-disc list-inside">
-                    <li>Building fast, fully responsive web layouts</li>
-                    <li>Writing clean semantic HTML structure</li>
-                    <li>Styling interfaces with utility frameworks like Tailwind</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer / Clickable Contact Section -->
-    <footer id="contact" class="max-w-6xl mx-auto px-6 py-12 mt-12 border-t border-slate-800 text-center text-sm text-slate-500">
-        <div class="mb-8 max-w-md mx-auto">
-            <p class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-3">Get In Touch</p>
-            <!-- A big, beautiful interactive button for your email -->
-            <a href="mailto:thunderpromax169@gmail.com" class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-800/60 border border-slate-700 hover:border-sky-400 text-slate-200 hover:text-sky-400 font-medium transition shadow-sm">
-                📧 Email Me: thunderpromax169@gmail.com
-            </a>
-        </div>
-        
-        <div class="pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-            <p>© 2026 Anjisha. Powered by GitHub Pages.</p>
-            <p>
-                View my source code on 
-                <a href="https://github.com" target="_blank" class="text-sky-400 hover:text-sky-300 transition underline underline-offset-4 font-medium">GitHub</a>
-            </p>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
