@@ -4,141 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjisha | Portfolio</title>
-    <!-- Tailwind CSS Script -->
-    <script src="https://tailwindcss.com"></script>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
-    
     <style>
+        /* General Setup */
         body {
             background-color: #f8fafc;
             color: #0f172a;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 40px;
         }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
+
+        /* Large Header Layout */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #0f172a;
+            padding-bottom: 20px;
+            margin-bottom: 80px; /* Big spacing gap below header */
+        }
+        .logo {
+            background-color: #0f172a;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            font-size: 24px;
+        }
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #0f172a;
+            font-size: 18px;
+        }
+
+        /* Two-Column App Layout (Left and Right Separation) */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px; /* Big layout spacing gap between columns */
+            margin-bottom: 80px;
+        }
+
+        /* Left Side Custom Styling Box */
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name-badge {
+            font-size: 48px;
+            font-weight: 900;
+            margin: 0 0 20px 0;
+            border: 3px solid #0f172a;
+            padding: 20px;
+            background-color: white;
+            display: inline-block;
+        }
+        .bio-text {
+            font-size: 18px;
+            line-height: 1.8; /* Large line spacing for text clarity */
+            color: #334155;
+        }
+
+        /* Right Side Image Box */
+        .right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flower-card {
+            border: 3px solid #0f172a;
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+        }
+        .flower-card img {
+            width: 100%;
+            height: 300px;
+            object-cover: cover;
+            border: 3px solid #0f172a;
+        }
+
+        /* Big Color Block Rows */
+        .section-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px; /* Big spacing gap between boxes */
+            margin-bottom: 100px; /* Huge spacing below rows */
+        }
+
+        /* The Custom Colors You Requested */
+        .pink-box {
+            background-color: #ffe4e6; /* Soft Rose Pink */
+            border: 3px solid #0f172a;
+            padding: 30px;
+            text-decoration: none;
+            color: #0f172a;
+        }
+        .blue-box {
+            background-color: #e0f2fe; /* Light Slate Blue */
+            border: 3px solid #0f172a;
+            padding: 30px;
+            text-decoration: none;
+            color: #0f172a;
+        }
+        .red-box {
+            background-color: #fee2e2; /* Muted Light Red */
+            border: 3px solid #0f172a;
+            padding: 40px;
+            max-w: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .box-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .box-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .email-button {
+            display: inline-block;
+            background-color: #0f172a;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
-<body class="antialiased min-h-screen">
+<body>
 
-    <!-- NAVIGATION HEADER -->
-    <nav class="max-w-7xl mx-auto px-12 py-8 flex justify-between items-center border-b-2 border-slate-900 bg-white shadow-sm">
-        <div class="heading-font font-bold text-2xl uppercase tracking-tight bg-slate-900 text-white px-4 py-1">ANJISHA.DEV</div>
-        <div class="flex gap-12 text-base font-bold uppercase heading-font tracking-widest">
-            <a href="#work" class="hover:text-blue-600 transition">Work</a>
-            <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
-            <a href="#contact" class="hover:text-red-600 transition">Contact</a>
+    <!-- NAV HEADER BAR -->
+    <nav class="nav-container">
+        <div class="logo">ANJISHA.DEV</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- BIOGRAPHY WORKSPACE (Massive Top Spacing Gap) -->
-    <main class="max-w-7xl mx-auto px-12 mt-32 mb-32 grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
-        
-        
-        <div class="md:col-span-7 space-y-8">
-            <div class="inline-block bg-blue-600 border-2 border-slate-900 text-white text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-widest shadow-sm">
-                ⚡ Frontend Developer & Designer
-            </div>
-            
-            <div class="border-2 border-slate-900 bg-white p-8 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] rounded-xl">
-                <h1 class="heading-font text-5xl font-black uppercase tracking-tight text-slate-900">
-                    ANJISHA
-                </h1>
-            </div>
-
-            <p class="text-lg leading-relaxed text-slate-700 max-w-xl font-medium">
+    <!-- TWO-COLUMN WORKSPACE (Left Text, Right Visual Image) -->
+    <main class="main-layout">
+        <!-- Left Side Text Information -->
+        <div class="left-column">
+            <h1 class="name-badge">ANJISHA</h1>
+            <p class="bio-text">
                 Welcome to my web studio! I am passionate about programming, designing digital assets, and constructing functional modern web interfaces. I break down layout systems and design clean, interactive web experiences.
             </p>
         </div>
 
-        <!-- Right Side: Polaroid Flower Image Anchor -->
-        <div class="md:col-span-5 flex justify-end">
-            <div class="border-2 border-slate-900 bg-white p-6 pb-12 w-full max-w-[340px] shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl transform rotate-2">
-                <div class="w-full h-80 bg-slate-100 border-2 border-slate-900 overflow-hidden rounded-xl">
-                    <img src="https://unsplash.com" 
-                         alt="Botanical Art Visual" 
-                         class="w-full h-full object-cover grayscale contrast-125">
-                </div>
+        <!-- Right Side Polaroid Plant Space -->
+        <div class="right-column">
+            <div class="flower-card">
+                <img src="https://unsplash.com" alt="Botanical Art">
             </div>
         </div>
-
     </main>
 
-    <!-- WORK SECTION (Massive Spacing Layout Blocks) -->
-    <section id="work" class="max-w-7xl mx-auto px-12 mt-48 mb-48 scroll-mt-12">
-        <h2 class="heading-font font-bold text-3xl uppercase bg-blue-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
-            Featured Projects 📂
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <!-- Project 1: Portfolio Hub (Soft Muted Rose Pink Block) -->
-            <a href="https://github.com" target="_blank" class="block border-2 border-slate-900 bg-[#ffe4e6] p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] transition-all rounded-2xl group">
-                <div class="w-full h-56 bg-white border-2 border-slate-900 mb-6 overflow-hidden rounded-xl">
-                    <img src="https://unsplash.com" alt="Floral Asset 2" class="w-full h-full object-cover grayscale mix-blend-multiply">
-                </div>
-                <h3 class="heading-font font-bold text-2xl text-slate-900 group-hover:underline">Portfolio Hub ↗</h3>
-                <p class="text-sm mt-4 text-slate-700 leading-relaxed font-medium">This clean customized developer layout built with Tailwind CSS utility classes and hosted live right here.</p>
+    <!-- PROJECTS BLOCK HUB (Pink and Blue Custom Containers) -->
+    <section id="work">
+        <div class="section-title">Featured Projects 📂</div>
+        <div class="grid-container">
+            <!-- Project 1 (Pink Background Container) -->
+            <a href="https://github.com" target="_blank" class="pink-box">
+                <p class="box-title">Portfolio Hub ↗</p>
+                <p class="box-desc">My main workspace layout hosted live right here on GitHub Pages.</p>
             </a>
 
-            <!-- Project 2: Misconception Clinic Web App (Fresh Mint Green Block) -->
-            <a href="https://vercel.app" target="_blank" class="block border-2 border-slate-900 bg-[#d1fae5] p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] transition-all rounded-2xl group">
-                <div class="w-full h-56 bg-white border-2 border-slate-900 mb-6 overflow-hidden rounded-xl">
-                    <img src="https://unsplash.com" alt="Floral Asset 3" class="w-full h-full object-cover grayscale mix-blend-multiply">
-                </div>
-                <h3 class="heading-font font-bold text-2xl text-slate-900 group-hover:underline">Misconception Clinic ↗</h3>
-                <p class="text-sm mt-4 text-slate-700 leading-relaxed font-medium">A custom web application deployed onto Vercel tracking application rule states, filters, and logical content structures.</p>
+            <!-- Project 2 (Blue Background Container) -->
+            <a href="https://vercel.app" target="_blank" class="blue-box">
+                <p class="box-title">Misconception Clinic ↗</p>
+                <p class="box-desc">A custom web application deployed onto Vercel tracking application logic rules.</p>
             </a>
         </div>
     </section>
 
-    <!-- CORE SKILLS BLOCK GALLERY (Gigantic Spacing Separation) -->
-    <section id="skills" class="max-w-7xl mx-auto px-12 mt-48 mb-48 scroll-mt-12">
-        <h2 class="heading-font font-bold text-3xl uppercase bg-pink-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
-            Core Skills ⚙️
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <!-- Skill Module 1: UI/UX (Stark White Block - Left Highlighted) -->
-            <div class="bg-white border-2 border-slate-900 p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl flex gap-6 items-start">
-                <div class="text-3xl bg-blue-100 border-2 border-slate-900 rounded-full p-3 font-bold text-blue-600">🖋</div>
-                <div>
-                    <h3 class="heading-font font-bold text-xl uppercase tracking-wide text-slate-900">UI / UX Designing</h3>
-                    <ul class="text-sm text-slate-600 font-medium mt-4 space-y-2 list-disc list-inside leading-relaxed">
-                        <li>Structuring clean application flows & custom interface frameworks</li>
-                        <li>Arranging beautiful typography systems and element spacing</li>
-                        <li>Designing custom functional assets for interactive layouts</li>
-                    </ul>
-                </div>
+    <!-- CORE SKILLS BLOCK HUB (Clean Static Content Matrix) -->
+    <section id="skills">
+        <div class="section-title">Core Skills ⚙️</div>
+        <div class="grid-container">
+            <div class="blue-box">
+                <p class="box-title">UI / UX Designing</p>
+                <p class="box-desc">Structuring clean application flows, arranging font sizing models, and building clean interfaces.</p>
             </div>
-
-            <!-- Skill Module 2: Development (Stark White Block - Right Highlighted) -->
-            <div class="bg-white border-2 border-slate-900 p-8 shadow-[6px_6px_0px_0px_rgba(15,23,42,1)] rounded-2xl flex gap-6 items-start">
-                <div class="text-3xl bg-pink-100 border-2 border-slate-900 rounded-full p-3 font-bold text-pink-600">💻</div>
-                <div>
-                    <h3 class="heading-font font-bold text-xl uppercase tracking-wide text-slate-900">Website Development</h3>
-                    <ul class="text-sm text-slate-600 font-medium mt-4 space-y-2 list-disc list-inside leading-relaxed">
-                        <li>Building responsive layouts that shift cleanly on screens</li>
-                        <li>Writing standard lightweight component files and frameworks</li>
-                        <li>Continuous integration pipelines and git push deployments</li>
-                    </ul>
-                </div>
+            <div class="pink-box">
+                <p class="box-title">Website Development</p>
+                <p class="box-desc">Building fully responsive frontend web code frameworks using clean structural parameters.</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT INFORMATION MODULE (Sunset Red Card) -->
-    <section id="contact" class="max-w-7xl mx-auto px-12 mt-48 mb-32 scroll-mt-12">
-        <h2 class="heading-font font-bold text-3xl uppercase bg-red-600 text-white border-2 border-slate-900 px-6 py-2 shadow-[4px_4px_0px_0px_rgba(15,23,42,1)] mb-16 inline-block rounded-lg">
-            Contact Info 📬
-        </h2>
-        
-        <div class="border-2 border-slate-900 bg-[#fee2e2] p-12 text-center max-w-2xl mx-auto shadow-[8px_8px_0px_0px_rgba(15,23,42,1)] rounded-3xl">
-            <span class="text-4xl block mb-4">✉</span>
-            <h3 class="heading-font font-bold text-2xl uppercase tracking-wide text-slate-900 mb-4">Start a Collaboration</h3>
-            
-            <a href="mailto:thunderpromax169@gmail.com" class="inline-block border-2 border-slate-900 bg-slate-900 text-white font-bold text-base uppercase tracking-widest px-10 py-5 hover:bg-white hover:text-slate-900 transition-colors shadow-[4px_4px_0px_0px_rgba(239,68,68,1)] rounded-xl">
+    <!-- CONTACT ALERT ACTION GRID (Red Background Console Card) -->
+    <section id="contact">
+        <div class="section-title">Contact Info 📬</div>
+        <div class="red-box">
+            <p class="box-title">Start a Collaboration</p>
+            <p class="box-desc">Click the link below to open your launcher dashboard and email me instantly.</p>
+            <a href="mailto:thunderpromax169@gmail.com" class="email-button">
                 📧 thunderpromax169@gmail.com
             </a>
         </div>
