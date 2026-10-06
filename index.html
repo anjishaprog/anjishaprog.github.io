@@ -1,155 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjisha | Web Lab</title>
     <!-- Tailwind CSS Script -->
     <script src="https://tailwindcss.com"></script>
+    <!-- Google Fonts for the Raw Zine Typewriter Vibe -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
-            background-color: #0f172a; /* Slate 900 */
-            color: #f8fafc; /* Slate 50 */
+            background-color: #e5e0d8; /* Editorial Warm Warm-Beige */
+            color: #1c1b19; /* Stark Carbon Black */
+            font-family: 'Courier Prime', monospace;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Brutalist Hard Border Outlines */
+        .brutal-border {
+            border: 2px solid #1c1b19;
+        }
+        .brutal-shadow {
+            box-shadow: 4px 4px 0px 0px #1c1b19;
+        }
+        .brutal-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #1c1b19;
         }
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col md:flex-row">
+<body class="antialiased min-h-screen pb-24">
 
-    <!-- Sidebar Navigation Menu (Interactive App Controller) -->
-    <nav class="w-full md:w-64 bg-slate-900/80 border-b md:border-b-0 md:border-r border-slate-800 p-6 flex flex-col justify-between shrink-0 md:sticky md:top-0 md:h-screen">
-        <div>
-            <div class="font-black tracking-wider text-2xl text-sky-400 mb-8 flex items-center gap-2">
-                <span>⚡</span> anjisha.dev
-            </div>
-            
-            <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Navigation Hub</p>
-            <div class="flex flex-row md:flex-col gap-2 text-sm font-medium text-slate-400 overflow-x-auto md:overflow-visible pb-2 md:pb-0">
-                <a href="#welcome" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
-                    <span>👋</span> Welcome
-                </a>
-                <a href="#work" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
-                    <span>🕹️</span> Featured Work
-                </a>
-                <a href="#skills" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
-                    <span>🛠️</span> Core Skills
-                </a>
-                <a href="#contact" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/30 text-slate-200 hover:bg-sky-500/10 hover:text-sky-400 transition w-full whitespace-nowrap">
-                    <span>📬</span> Contact Info
-                </a>
-            </div>
-        </div>
-
-        <!-- Stable Footer Branding Inside Sidebar -->
-        <div class="hidden md:block pt-6 border-t border-slate-800/60 text-xs text-slate-500 space-y-2">
-            <p>© 2026 Anjisha.<br>Hosted on GitHub Pages.</p>
-            <a href="https://github.com" target="_blank" class="inline-block text-sky-400 hover:underline">View Profile Source ↗</a>
+    <!-- Header Border Bar -->
+    <nav class="max-w-4xl mx-auto px-6 py-6 flex justify-between items-center border-b-2 border-dashed border-[#1c1b19] mt-4">
+        <div class="heading-font font-black tracking-tighter text-xl uppercase bg-[#1c1b19] text-[#e5e0d8] px-2 py-0.5">ANJISHA.DEV ✷</div>
+        <div class="flex gap-6 text-sm font-bold uppercase heading-font">
+            <a href="#work" class="hover:underline underline-offset-4">MY WORK</a>
+            <a href="#skills" class="hover:underline underline-offset-4">SERVICES</a>
+            <a href="#contact" class="hover:underline underline-offset-4">CONNECT</a>
         </div>
     </nav>
 
-    <!-- Main Dynamic Content Workspace -->
-    <div class="flex-1 max-w-5xl px-6 md:px-12 py-8 space-y-16">
-
-        <!-- 1. Intro Screen -->
-        <header id="welcome" class="py-12 border-b border-slate-800/50">
-            <span class="inline-flex items-center text-xs px-2.5 py-1 rounded-full font-medium text-sky-400 bg-sky-500/10 border border-sky-500/20">
-                🚀 Welcome to My Web Lab
-            </span>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent leading-tight">
-                Hi, I'm Anjisha. I construct clean & interactive web interfaces.
-            </h1>
-            <p class="mt-4 text-slate-400 max-w-xl text-base leading-relaxed">
-                I love breaking down layout systems, organizing unique frontend assets, and coding highly responsive applications from scratch.
-            </p>
-        </header>
-
-        <!-- 2. Work Showcase Panel -->
-        <section id="work" class="scroll-mt-6">
-            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
-                <span>📂</span> Clickable App Launchpad
-            </h2>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <!-- App Card 1 -->
-                <a href="https://github.com/anjishaprog.github.io" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
-                    <span class="text-xs font-semibold text-sky-400">Template Base</span>
-                    <h3 class="font-bold text-lg mt-1 text-slate-100 flex justify-between items-center">
-                        <span>Portfolio Hub</span>
-                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
-                    </h3>
-                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">This clean layout built using Tailwind CSS utility styles.</p>
-                </a>
-
-                <!-- App Card 2 (Gaming Link) -->
-                <a href="https://bit.ly" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
-                    <span class="text-xs font-semibold text-purple-400">Immersive Play</span>
-                    <h3 class="font-bold text-lg mt-1 text-slate-100 flex justify-between items-center">
-                        <span>Custom Gaming Site</span>
-                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
-                    </h3>
-                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">My responsive playground mapping modern active layout assets.</p>
-                </a>
-
-                <!-- App Card 3 (Misconception Clinic App) -->
-                <a href="https://vercel.app" target="_blank" class="block p-5 rounded-2xl bg-slate-800/30 border border-slate-800 hover:border-sky-500/40 hover:bg-slate-800/50 transition group text-left">
-                    <span class="text-xs font-semibold text-emerald-400">Deployed App</span>
-                    <h3 class="font-semibold text-lg mt-1 text-slate-100 flex justify-between items-center">
-                        <span>Misconception Clinic</span>
-                        <span class="text-xs opacity-60 group-hover:translate-x-1 transition-transform">↗</span>
-                    </h3>
-                    <p class="text-xs mt-2 text-slate-400 leading-relaxed">A custom web interface launched securely onto cloud hosting systems.</p>
-                </a>
+    <!-- Main Zine Content Workspace -->
+    <main class="max-w-4xl mx-auto px-6 mt-12 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        
+        <div class="md:col-span-7 space-y-8">
+            <div class="inline-block brutal-border bg-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider brutal-shadow">
+                ✷ FREELANCE WEB SPECIALIST
             </div>
-        </section>
-
-        <!-- 3. Skills Matrix Deck -->
-        <section id="skills" class="scroll-mt-6 border-t border-slate-800/50 pt-12">
-            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
-                <span>⚙️</span> Interactive Skill Modules
-            </h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-5 rounded-2xl bg-slate-800/20 border border-slate-800 hover:border-slate-700 transition">
-                    <span class="text-xs font-medium text-sky-400 tracking-wider block mb-1">Visual Architecture</span>
-                    <h3 class="font-bold text-lg text-slate-100 mb-2">UI / UX Designing</h3>
-                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
-                        <li>Structuring minimalist layouts & dark UI flows</li>
-                        <li>Configuring crisp structural grids and spacing</li>
-                        <li>Asset mapping and visual element composition</li>
-                    </ul>
-                </div>
+            <!-- Handcrafted Name Accent Stamp Box -->
+            <div class="brutal-border bg-white p-6 brutal-shadow relative overflow-hidden rotate-[-1deg]">
+                <div class="absolute top-2 right-4 text-xl opacity-40">☺</div>
+                <h1 class="heading-font text-5xl font-black uppercase tracking-tighter leading-none">
+                    ZUKISWA<br><span class="text-neutral-400">PHIRI</span>
+                </h1>
+                <p class="text-xs uppercase tracking-widest font-bold text-neutral-500 mt-2">// anjishaprog studio</p>
+            </div>
 
-                <div class="p-5 rounded-2xl bg-slate-800/20 border border-slate-800 hover:border-slate-700 transition">
-                    <span class="text-xs font-medium text-sky-400 tracking-wider block mb-1">Functional Interface</span>
-                    <h3 class="font-bold text-lg text-slate-100 mb-2">Website Development</h3>
-                    <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
-                        <li>Writing clean, lightweight component files</li>
-                        <li>Executing rapid layouts with Tailwind frameworks</li>
-                        <li>Continuous integration and git push deployment</li>
-                    </ul>
+            <div class="text-sm leading-relaxed space-y-4 pt-4">
+                <p class="font-bold">Anjisha Phiri is a freelance frontend developer and digital asset architect specializing in responsive structure execution and UI optimization frameworks.</p>
+                <p class="text-neutral-700">I break down complex layouts, assemble functional design ecosystems, and code beautiful web architectures using lightweight component styling parameters.</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Polaroid Botanical Art Box (Plant Visual Anchor) -->
+        <div class="md:col-span-5 flex justify-center">
+            <div class="brutal-border bg-white p-4 pb-8 brutal-shadow rotate-[2deg] w-full max-w-[280px] transition-transform hover:rotate-0 duration-300">
+                <div class="w-full h-64 bg-[#f3efe9] brutal-border overflow-hidden flex items-center justify-center relative">
+                    <!-- Elegant Minimalist Placeholder Flower Asset Link -->
+                    <img src="https://unsplash.com" 
+                         alt="Minimalist White Flower Botanical Asset" 
+                         class="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply">
+                    <div class="absolute bottom-2 left-2 text-[10px] bg-white brutal-border px-1.5 uppercase font-bold tracking-widest">FIG. 01</div>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="heading-font font-bold uppercase tracking-wider text-xs">BOTANICAL STUDY</p>
+                    <p class="text-[10px] text-neutral-500 mt-1">Anjisha Portfolio Space // 2026</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- 4. Interactive Contact Console -->
-        <section id="contact" class="scroll-mt-6 border-t border-slate-800/50 pt-12 pb-20">
-            <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-6 flex items-center gap-2">
-                <span>📬</span> Action Center
+    </main>
+
+    <!-- Work Launchpad Deck (Clickable Project Columns) -->
+    <section id="work" class="max-w-4xl mx-auto px-6 mt-20">
+        <!-- Zine Header Separator Label -->
+        <div class="brutal-border bg-white brutal-shadow px-4 py-2 inline-block font-black uppercase text-sm tracking-wide heading-font mb-6 rotate-[-0.5deg]">
+            MY WORK ☺
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1: Main Base Repo -->
+            <a href="https://github.com" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
+                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// DEPLOYED BASE</span>
+                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">PORTFOLIO HUB ↗</h3>
+                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Clean customized layout engineered with modern utility structure parameters and continuous git updates.</p>
+            </a>
+
+            <!-- Card 2: Interactive Gaming Application -->
+            <a href="https://bit.ly" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
+                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// RECREATION LAB</span>
+                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">GAMING PLAYGROUND ↗</h3>
+                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Interactive live media layout developed to refine responsive asset distribution workflows and logic flow cards.</p>
+            </a>
+
+            <!-- Card 3: Clinic Application Deck -->
+            <a href="https://vercel.app" target="_blank" class="block bg-white brutal-border p-5 brutal-shadow brutal-card transition-all text-left group">
+                <span class="text-[10px] font-bold uppercase text-neutral-500 tracking-widest">// VERCEL BUILD</span>
+                <h3 class="heading-font font-black text-lg mt-1 group-hover:text-neutral-500 transition-colors">MISCONCEPTION APP ↗</h3>
+                <p class="text-xs mt-3 leading-relaxed text-neutral-600">Custom web engine deployed to monitor interfaces, content filters, and modern cross-platform browser spacing.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services / Core Competencies Matrix Section -->
+    <section id="skills" class="max-w-4xl mx-auto px-6 mt-20">
+        <div class="w-full text-center mb-8">
+            <h2 class="brutal-border bg-white brutal-shadow px-8 py-3 inline-block font-black uppercase text-lg tracking-wider heading-font">
+                SERVICES I OFFER
             </h2>
-            
-            <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-800/40 to-slate-900/60 border border-slate-800 text-center max-w-xl">
-                <h3 class="font-bold text-xl text-slate-100 mb-2">Let's Connect!</h3>
-                <p class="text-xs text-slate-400 mb-6 max-w-sm mx-auto">Click below to open your local client dashboard and email me instantly.</p>
-                
-                <a href="mailto:thunderpromax169@gmail.com" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-sky-500 font-semibold text-slate-950 hover:bg-sky-400 transition transform hover:-translate-y-0.5 active:translate-y-0 shadow-lg shadow-sky-500/10 text-sm">
-                    🚀 Launch Email Console
-                </a>
-            </div>
-        </section>
+        </div>
 
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Box Module 1 -->
+            <div class="bg-white brutal-border p-6 brutal-shadow flex gap-4 items-start">
+                <div class="text-2xl pt-1">🖋</div>
+                <div>
+                    <h3 class="heading-font font-bold text-base uppercase tracking-tight">UI / UX Designing</h3>
+                    <p class="text-xs text-neutral-600 mt-2 leading-relaxed">Assembling high-fidelity mockups, clean component layouts, custom font grids, and interactive web flow parameters constructed from visual assets.</p>
+                </div>
+            </div>
+
+            <!-- Box Module 2 -->
+            <div class="bg-white brutal-border p-6 brutal-shadow flex gap-4 items-start">
+                <div class="text-2xl pt-1">💻</div>
+                <div>
+                    <h3 class="heading-font font-bold text-base uppercase tracking-tight">Website Development</h3>
+                    <p class="text-xs text-neutral-600 mt-2 leading-relaxed">Building fast, lightweight components, semantic HTML blueprints, utility CSS declarations, and secure automated cloud tracking pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Action Console Footer -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 mt-20 border-t-2 border-dashed border-[#1c1b19] pt-12">
+        <div class="brutal-border bg-white brutal-shadow p-8 text-center max-w-xl mx-auto rotate-[-0.5deg]">
+            <span class="text-2xl block mb-2">✉</span>
+            <h3 class="heading-font font-black text-xl uppercase tracking-tighter mb-2">START A WORK COLLABORATION</h3>
+            <p class="text-xs text-neutral-600 mb-6 font-mono">Let's craft unique interactive digital systems together.</p>
+            
+            <a href="mailto:thunderpromax169@gmail.com" class="inline-block brutal-border bg-[#1c1b19] text-[#e5e0d8] font-bold text-xs uppercase tracking-widest px-6 py-3 hover:bg-white hover:text-[#1c1b19] transition-colors brutal-shadow">
+                HELLO@REALLYGREATSITE.COM
+            </a>
+        </div>
+    </section>
 
 </body>
 </html>
